@@ -12,3 +12,4 @@ To view, go to [evangriffiths.github.io](https://evangriffiths.github.io/)
 - You can either view .php files in you browser by installing php locally and:
   - Starting a local php server, `php -S localhost:port -t your_folder/`
   - Compiling the php into html: `php file.php > file.html`
+- An alternative is to use a templating framework like `jinja2`. This has a python API that can be used to compile the html from a templated version that contains jinja directives.
