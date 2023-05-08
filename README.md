@@ -1,5 +1,9 @@
 To view, go to [evangriffiths.github.io](https://evangriffiths.github.io/)
 
+## Building
+
+This website uses jinja2 templating. To build the final html, run `make` from the root directory.
+
 ## Things I've learned along the way
 
 - Web pages are HTML files rendered in a browser.
