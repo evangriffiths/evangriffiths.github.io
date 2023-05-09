@@ -17,3 +17,15 @@ This website uses jinja2 templating. To build the final html, run `make` from th
   - Starting a local php server, `php -S localhost:port -t your_folder/`
   - Compiling the php into html: `php file.php > file.html`
 - An alternative is to use a templating framework like `jinja2`. This has a python API that can be used to compile the html from a templated version that contains jinja directives.
+
+## TODO
+
+Sections on:
+
+- van
+- paintings
+- videos(?)
+- web app for recipes->shopping list
+- bikeboxparking
+- lily with things on her head
+- uni thesis
