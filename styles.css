@@ -1,6 +1,4 @@
-/* Set the height of the body element to 100% */
 body {
-  /* height: 100%; */
   font: 16px Arial, sans-serif;;
 }
 
@@ -16,8 +14,8 @@ footer {
   bottom: 0;
   margin: 0px;
   width: 100%;
-  height: 50px; /* Set the height of the footer */
-  background-color: #333; /* Set the background color of the footer */
+  height: 50px;
+  background-color: #333;
   color: #fff;
   text-align: center; /* Center the text within the footer */
 }
@@ -51,4 +49,34 @@ nav a {
 
 header, footer {
   margin: 0; /* removes any margins from the header and footer */
+}
+
+li.dropdown .dropbtn {
+  color: #fff;
+  padding: 0;
+}
+
+/* Style for the drop-down content */
+li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #524d4d;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Show the drop-down content when the dropbtn is hovered over */
+li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for the drop-down links */
+li.dropdown .dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+li.dropdown .dropdown-content a:hover {
+  background-color: #333; /* Background color you want on hover */
 }
