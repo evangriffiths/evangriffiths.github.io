@@ -17,3 +17,9 @@ for f in glob.glob("site/*", recursive=True):
     output_path = f.replace("site", "../build")
     with open(output_path, "w") as f:
         f.write(output)
+
+# Copy over css file from src to build
+os.system("cp styles.css ../build/styles.css")
+
+# Copy over static files from src to build
+os.system("cp -r static ../build/static")

@@ -25,7 +25,6 @@ Sections on:
 - van
 - paintings
 - videos(?)
-- web app for recipes->shopping list
 - bikeboxparking
 - lily with things on her head
 - uni thesis
