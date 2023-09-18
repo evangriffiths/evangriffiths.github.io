@@ -1,5 +1,16 @@
 body {
-  font: 16px Arial, sans-serif;;
+  font: 16px Arial, sans-serif;
+  padding-bottom: 60px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 main {
@@ -47,10 +58,6 @@ nav a {
   text-decoration: none;
 }
 
-header, footer {
-  margin: 0; /* removes any margins from the header and footer */
-}
-
 li.dropdown .dropbtn {
   color: #fff;
   padding: 0;
@@ -79,4 +86,62 @@ li.dropdown .dropdown-content a {
 
 li.dropdown .dropdown-content a:hover {
   background-color: #333; /* Background color you want on hover */
+}
+
+.image-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  max-width: 80%; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative; /* Added */
+}
+
+/* Style for individual images */
+.scrollable-image-block {
+  flex-shrink: 0;
+}
+
+.nav-button-container {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-button {
+  position: fixed;
+  top: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-button.left {
+  left: 10px;
+}
+
+.nav-button.right {
+  right: 10px;
+}
+
+.nav-button.left::before {
+  content: '\2190'; /* Unicode for left arrow */
+}
+
+.nav-button.right::before {
+  content: '\2192'; /* Unicode for right arrow */
 }
