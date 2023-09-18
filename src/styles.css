@@ -85,7 +85,7 @@ li.dropdown .dropdown-content a {
 }
 
 li.dropdown .dropdown-content a:hover {
-  background-color: #333; /* Background color you want on hover */
+  background-color: #333; /* Background color on hover */
 }
 
 .image-block {
@@ -98,22 +98,26 @@ li.dropdown .dropdown-content a:hover {
 .image-container-wrapper {
   position: relative;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .image-container {
   display: flex;
   overflow-x: scroll;
   width: 100%;
-  max-width: 80%; /* Adjust the max-width as needed */
+  max-width: 80%;
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
   position: relative;
 }
 
-/* Style for individual images */
-.scrollable-image-block {
-  flex-shrink: 0;
+.image-container img {
+  margin-right: 10px; /* Add a 10px gap between images */
+}
+
+.image-container img:last-child {
+  margin-right: 0; /* Remove margin-right for the last image */
 }
 
 .nav-button {
@@ -121,7 +125,7 @@ li.dropdown .dropdown-content a:hover {
   top: 50%;
   padding: 10px;
   cursor: pointer;
-  font-size: 24px; /* Adjust the font size as needed */
+  font-size: 24px;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
