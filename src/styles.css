@@ -95,6 +95,11 @@ li.dropdown .dropdown-content a:hover {
   margin-bottom: 40px;
 }
 
+.image-container-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .image-container {
   display: flex;
   overflow-x: scroll;
@@ -103,7 +108,7 @@ li.dropdown .dropdown-content a:hover {
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
-  position: relative; /* Added */
+  position: relative;
 }
 
 /* Style for individual images */
@@ -112,7 +117,7 @@ li.dropdown .dropdown-content a:hover {
 }
 
 .nav-button {
-  position: fixed;
+  position: absolute;
   top: 50%;
   padding: 10px;
   cursor: pointer;
