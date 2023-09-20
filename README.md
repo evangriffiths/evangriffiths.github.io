@@ -4,6 +4,13 @@ To view, go to [evangriffiths.github.io](https://evangriffiths.github.io/)
 
 This website uses jinja2 templating. To build the final html, run `make` from the root directory.
 
+```bash
+python3 -m venv venv
+pip install -r requirements.txt
+make
+open build/index.html
+```
+
 ## Things I've learned along the way
 
 - Web pages are HTML files rendered in a browser.
@@ -22,7 +29,6 @@ This website uses jinja2 templating. To build the final html, run `make` from th
 
 Sections on:
 
-- van
 - paintings
 - videos(?)
 - bikeboxparking

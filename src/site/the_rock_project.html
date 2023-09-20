@@ -1,3 +1,4 @@
+{% import "macros.html" as macros %}
 {% include "templates/header.html" %}
 
 <! -- 
@@ -33,22 +34,20 @@ cupboards
   <p>In December 2021 Lily and I bought a 2010 SWB Ford Transit. Over the next 6 months we converted it to a small but mighty camper that we lived in while touring France and Spain the following summer. We've been using it for trips around Scotland since. In its previous life, the van belonged to a franchisee of <a href="https://www.therockproject.com">The Rock Project</a>, hence the decals. Its spirit lives on, and here is a run-through of the conversion process.</p>
 
   <h2>1. Clearout, subfloor and soundproofing</h2>
-  <div class="image-container-wrapper">
-    <div class="image-container">
-        <img src="static/images/the-rock-project/1-clearout-subfloor/IMG_1054.jpeg" width="300">
-        <img src="static/images/the-rock-project/1-clearout-subfloor/IMG_1068.jpeg" width="300">
-        <img src="static/images/the-rock-project/1-clearout-subfloor/IMG_1079.jpeg" width="300">
-        <img src="static/images/the-rock-project/1-clearout-subfloor/IMG_3737.JPG" width="300">
-        <img src="static/images/the-rock-project/1-clearout-subfloor/IMG_3742.JPG" width="300">
-        <img src="static/images/the-rock-project/1-clearout-subfloor/IMG_3743.JPG" width="300">
-    </div>
-    
-    <!-- Navigation buttons -->
-    <div class="nav-button left" id="scrollLeft"></div>
-    <div class="nav-button right" id="scrollRight"></div>
-  </div>
+  {{ macros.scrollable_image_container(
+    [
+      "static/images/the-rock-project/1-clearout-subfloor/IMG_1054.jpeg",
+      "static/images/the-rock-project/1-clearout-subfloor/IMG_1068.jpeg",
+      "static/images/the-rock-project/1-clearout-subfloor/IMG_1079.jpeg",
+      "static/images/the-rock-project/1-clearout-subfloor/IMG_3737.JPG",
+      "static/images/the-rock-project/1-clearout-subfloor/IMG_3742.JPG",
+      "static/images/the-rock-project/1-clearout-subfloor/IMG_3743.JPG"
+    ]
+  ) }}
+  <p>TODO</p>
+
   <script>
-    // JavaScript to handle scrolling
+    // Handle scrolling of `scrollable_image_container` div (see macros.html)
     document.getElementById("scrollLeft").addEventListener("click", function () {
         scrollImageContainer(-300); // Adjust the scroll distance as needed
     });
@@ -62,8 +61,6 @@ cupboards
         container.scrollLeft += scrollAmount;
     }
   </script>
-
-  <p>TODO</p>
 </body>
 
 {% include "templates/footer.html" %}
