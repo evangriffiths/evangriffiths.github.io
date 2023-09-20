@@ -59,19 +59,19 @@ cupboards
 
 
   <script>
-    // Handle scrolling of `scrollable_image_container` div (see macros.html)
-    document.getElementById("scrollLeft").addEventListener("click", function () {
-        scrollImageContainer(-300); // Adjust the scroll distance as needed
-    });
+    // Add scroll functionality to image containers
+    document.querySelectorAll(".image-container-wrapper").forEach(function (wrapper) {
+        wrapper.addEventListener("click", function (event) {
+            const container = wrapper.querySelector(".image-container");
+            const scrollAmount = 300;
 
-    document.getElementById("scrollRight").addEventListener("click", function () {
-        scrollImageContainer(300); // Adjust the scroll distance as needed
+            if (event.target.classList.contains("left")) {
+                container.scrollLeft -= scrollAmount;
+            } else if (event.target.classList.contains("right")) {
+                container.scrollLeft += scrollAmount;
+            }
+        });
     });
-
-    function scrollImageContainer(scrollAmount) {
-        const container = document.querySelector(".image-container");
-        container.scrollLeft += scrollAmount;
-    }
   </script>
 </body>
 
