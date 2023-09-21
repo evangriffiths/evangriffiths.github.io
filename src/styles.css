@@ -39,6 +39,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1; /* make sure header is in foreground (i.e. pictures don't overlap it) */
 }
 
 nav ul {
@@ -102,6 +103,7 @@ li.dropdown .dropdown-content a:hover {
 }
 
 .image-container {
+  /* Display images in a horizontal row */
   display: flex;
   overflow-x: scroll;
   width: 100%;
@@ -113,6 +115,9 @@ li.dropdown .dropdown-content a:hover {
 }
 
 .image-container img {
+  width: 300px;
+  height: auto;
+  align-self: center; /* Center images vertically, don't change aspect ratio */
   margin-right: 10px; /* Add a 10px gap between images */
 }
 
