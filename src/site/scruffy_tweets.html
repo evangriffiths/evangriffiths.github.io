@@ -1,0 +1,12 @@
+{% include "templates/header.html" %}
+
+<body>
+  <p>Committing an act of vandalism, as inspired by Daniel Dennett's <a href="https://www.theatlantic.com/technology/archive/2023/05/problem-counterfeit-people/674075/">article in The Atlantic</a>. I wanted to see how easy it is to spin up a troll twitter bot, using the twitter dev API and a hosted Llama2-7B model. In this case we take on the persona of Ian McEwan's pet cocker spaniel. Part educational, part amusing, part degrading trust in society's institutions.</p>
+  <p>Source code <a href="https://github.com/evangriffiths/scruffy-tweets">here</a>. Below is the resulting twitter feed. New content daily:</p>
+  <div class="twitter-widget-container" style="width: 500px;">
+    <a class="twitter-timeline" href="https://twitter.com/ScruffyActually" data-height="500px">Tweets by Scruffy</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</body>
+
+{% include "templates/footer.html" %}
