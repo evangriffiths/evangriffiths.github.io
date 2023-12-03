@@ -5,7 +5,7 @@ To view, go to [evangriffiths.github.io](https://evangriffiths.github.io/)
 This website uses jinja2 templating. To build the final html, run `make` from the root directory.
 
 ```bash
-python3 -m venv venv
+python3 -m venv .venv
 pip install -r requirements.txt
 make
 open build/index.html
